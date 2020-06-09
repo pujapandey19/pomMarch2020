@@ -146,5 +146,11 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>com.tesults.testng</groupId>
+			<artifactId>tesults-testng</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
 	</dependencies>
 </project>
