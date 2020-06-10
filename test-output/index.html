@@ -181,7 +181,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;Hub spot Test automtion regression suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.hubspot.listeners.TestAllureListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.hubspot.listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.hubspot.listeners.ScreenshotListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;3&quot; name=&quot;login page test&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
@@ -229,24 +230,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySignUpLinkTest')
 data.setCell(0, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(0, 3, 5247);
+data.setCell(0, 3, 5328);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyDoLoginTest')
 data.setCell(1, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(1, 3, 618);
+data.setCell(1, 3, 607);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifySignUpWithGoogleTest')
 data.setCell(2, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(2, 3, 62);
+data.setCell(2, 3, 76);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyGetLoginPagetitleTest')
 data.setCell(3, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(3, 3, 53);
+data.setCell(3, 3, 21);
 window.suiteTableData['Hub_spot_Test_automtion_regression_suite']= { tableData: data, tableDiv: 'times-div-Hub_spot_Test_automtion_regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Hub_spot_Test_automtion_regression_suite">
               </div> <!-- times-div-Hub_spot_Test_automtion_regression_suite -->
             </div> <!-- times-div -->
@@ -279,23 +280,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifySignUpLinkTest</span>
-                <span class="method-start">7328 ms</span>
+                <span class="method-start">7049 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyGetLoginPagetitleTest</span>
-                <span class="method-start">12761 ms</span>
+                <span class="method-start">12592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySignUpWithGoogleTest</span>
-                <span class="method-start">12820 ms</span>
+                <span class="method-start">12621 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyDoLoginTest</span>
-                <span class="method-start">12887 ms</span>
+                <span class="method-start">12704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13511 ms</span>
+                <span class="method-start">13325 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

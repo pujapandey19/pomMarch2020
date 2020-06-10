@@ -2,6 +2,7 @@ com\qa\hubspot\listeners\PdfListener.class
 com\qa\hubspot\pages\LoginPage.class
 com\qa\hubspot\pages\SalesPage.class
 com\qa\hubspot\pages\MyContactsPages.class
+com\qa\hubspot\utils\OptionsManager.class
 com\qa\hubspot\base\BaseTest.class
 com\qa\hubspot\listeners\ScreenshotListener.class
 com\qa\hubspot\pages\HomePage.class
