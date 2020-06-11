@@ -10,7 +10,6 @@ com\qa\hubspot\listeners\TesultsListener.class
 com\qa\hubspot\utils\JavaScriptUtil.class
 com\qa\hubspot\utils\Constants.class
 com\qa\hubspot\utils\ExcelUtil.class
-com\qa\hubspot\listeners\ExtentReportListener.class
 com\qa\hubspot\listeners\TestAllureListener.class
 com\qa\hubspot\pages\ContactsPage.class
 com\qa\hubspot\pages\ContactsVerificationPages.class

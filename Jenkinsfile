@@ -3,27 +3,40 @@ pipeline{
 	stages {
 	
 	
-			stage('Test run on QA'){
-				steps{
-					sh 'mvn clean install -Denv="qa"'
-					}
-				}	
-				
-			stage('Test run on DEV'){
-				steps{
-					sh 'mvn clean install -Denv="dev"'
-					}
-				}	
-				
-			
-				
-			stage('Test run on PROD'){
-				steps{
-					sh 'mvn clean install -Denv="prod"'
-					}
-				}	
-				
-				
+	stage('Test Run On QA') {
+    stage('Build QA') {
+      parallel {
+        stage('Test Run On QA') {
+        stage('Build QA') {
+          steps {
+            sh 'mvn clean install -Denv="qa"'
+            sh 'mvn clean install -DskipTests=true'
+          }
+        }
+        
+      stage('Test Run On DEV') {
+      stage('Build DEV') {
+      parallel {
+        stage('Test Run On DEV') {
+        stage('Build DEV') {
+          steps {
+            sh 'mvn clean install -Denv="dev"'
+            sh 'mvn clean install -DskipTests=true'
+          }
+        }
+	
+	stage('Test Run On PROD') {
+      stage('Build PROD') {
+      parallel {
+        stage('Test Run On PROD') {
+        stage('Build DEV') {
+          steps {
+            sh 'mvn clean install -Denv="prod"'
+            sh 'mvn clean install -DskipTests=true'
+          }
+        }
+		
+							
 			stage('final'){
 				steps{
 					sh 'echo "test execution is done"'
