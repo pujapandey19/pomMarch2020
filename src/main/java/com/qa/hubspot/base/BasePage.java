@@ -44,7 +44,7 @@ public class BasePage {
 	public OptionsManager optionsManager;
 
 	public WebDriver init_driver(Properties prop) {
-
+		
 		optionsManager = new OptionsManager(prop);
 		String browsername = prop.getProperty("browser");
 
