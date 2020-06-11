@@ -3,23 +3,19 @@ pipeline{
 	stages {
 	
 	
-			stage('Test run on Dev'){
-				steps{
-					sh 'mvn clean install -Denv="dev"'
-					}
-				}	
-				
 			stage('Test run on QA'){
 				steps{
 					sh 'mvn clean install -Denv="qa"'
 					}
 				}	
 				
-			stage('Test run on Stage'){
+			stage('Test run on DEV'){
 				steps{
-					sh 'mvn clean install -Denv="stage"'
+					sh 'mvn clean install -Denv="dev"'
 					}
 				}	
+				
+			
 				
 			stage('Test run on PROD'){
 				steps{

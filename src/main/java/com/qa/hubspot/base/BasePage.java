@@ -103,6 +103,10 @@ public class BasePage {
 				case "dev":
 					path = "src\\main\\java\\com\\qa\\hubspot\\config\\dev.config.properties";
 					break;
+					
+				case "prod":
+					path = "src\\main\\java\\com\\qa\\hubspot\\config\\prod.config.properties";
+					break;
 
 				default:
 					System.out.println("Please pass the correct environment :" + env);
